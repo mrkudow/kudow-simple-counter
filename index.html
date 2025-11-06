@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compteur Twitch</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <h1>Kudow Simple Counter</h1>
+    <div class="app">
+        <h1>Compteur</h1>
+        <div class>
+            <h2>Fichier</h2>
+            <button id="counterFile">Choisir un fichier texte</button>
+        </div>
+        <div id="counter">
+            <h2>Compteur</h2>
+            <dl>
+                <dt><input type="text" id="counterName" /></dt>
+                <dd id="counterScore"></dd>
+            </dl>
+            <div>
+                <button id="counterIncrease">+</button>
+                <button id="counterDecrease">-</button>
+            </div>
+        </div>
+    </div>
+    <div class="tuto">
+        <h1>Tutoriel</h1>
+        <dl>
+            <dt>Fichier .TXT</dt>
+            <dd>
+                Créer un fichier vide au format <strong>.txt</strong> dans un emplacement de l'ordinateur.<br>
+                Par exemple, <em>counter.txt</em>
+            </dd>
+            <dt>Utiliser le compteur sur l'application</dt>
+            <dd>
+                Cliquer le bouton <strong>Choisir le fichier texte</strong><br>
+                Modifier le nom du compteur à sa guise dans le champ de texte dédié<br>
+                Incrémenter ou décrémenter le score avec, respectivement, les boutons <strong>+</strong> et <strong>-</strong>
+            </dd>
+            <dt>Charger le fichier sur OBS</dt>
+            <dd>
+                Dans OBS, créer une source <strong>Texte (GDI+)</strong><br>
+                Cocher la case <strong>Lire à partir d'un fichier</strong><br>
+                Cliquer le bouton <strong>Parcourir</strong> puis sélectionner le fichier TXT créé<br> puis valider la source
+                L'affichage se met à jour en temps réel
+            </dd>
+        </dl>
+    </div>
+    <script src="javascript/script.js" defer></script>
+</body>
+</html>
